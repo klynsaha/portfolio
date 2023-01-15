@@ -1,14 +1,19 @@
 import BodyCss from "./Body.css";
-import {
-  Flex,
-  Divider,
-  Heading,
-} from "@adobe/react-spectrum";
+import { Grid, Divider, Heading, View } from "@adobe/react-spectrum";
 import data from "../../data/data.json";
-import WorkCard from "./WorkCard";
-import EducationCard from "./EducationCard";
-import Briefcase from "@spectrum-icons/workflow/Briefcase";
-import Education from "@spectrum-icons/workflow/Education";
+import WorkCard from "./Work";
+import EducationCard from "./Education";
+import SkillCard from "./Skill";
+import HobbyCard from "./Hobby";
+import AwardCard from "./Award";
+import BriefcaseIcon from "@spectrum-icons/workflow/Briefcase";
+import EducationIcon from "@spectrum-icons/workflow/Education";
+import ActionIcon from "@spectrum-icons/workflow/Actions";
+import AnnotatePenIcon from "@spectrum-icons/workflow/AnnotatePen";
+import ReplayIcon from "@spectrum-icons/workflow/Replay";
+import GlobeIcon from "@spectrum-icons/workflow/Globe";
+import RealTimeCustomerProfileIcon from "@spectrum-icons/workflow/RealTimeCustomerProfile";
+
 
 const CardHeader = ({ heading, logo }) => {
   return (
@@ -23,36 +28,58 @@ const CardHeader = ({ heading, logo }) => {
 
 const Body = () => {
   return (
-    <Flex
+    <Grid
       margin={{ base: "1rem", S: "1rem 4rem 1rem 4rem" }}
-      direction="column"
-      gap="size-100"
+      gap="size-300"
+      columns={{
+        S: ["1fr"],
+        L: ["3fr", "1fr"],
+      }}
     >
-      <section id="experience">
-        <CardHeader
-          heading="Experience"
-          logo={<Briefcase size="M" UNSAFE_style={{ display: "inline" }} />}
-        />
-        {data.work.map((work, index) => (
-          <WorkCard key={index} work={work} />
-        ))}
-      </section>
+      <View>
+        <View>
+          <CardHeader heading="Experience" logo={<BriefcaseIcon size="S" />} />
+          {data.work.map((work, index) => (
+            <WorkCard key={index} work={work} />
+          ))}
+        </View>
 
-      <section id="education">
-        <CardHeader heading="Education" logo={<Education size="M" />} />
-        {data.education.map((education, index) => (
-          <EducationCard key={index} education={education} />
-        ))}
-      </section>
+        <View>
+          <CardHeader heading="Education" logo={<EducationIcon size="S" />} />
+          {data.education.map((education, index) => (
+            <EducationCard key={index} education={education} />
+          ))}
+        </View>
 
-      <section id="projects">
-        <CardHeader heading="Projects" />
-      </section>
+        <View>
+          <CardHeader heading="Projects" logo={<ActionIcon size="S" />} />
+        </View>
+      </View>
+      <View>
+        <View>
+          <CardHeader heading="Skills" logo={<AnnotatePenIcon size="S" />} />
+            <SkillCard skills={data.skills} />
+        </View>
 
-      <section id="skills">
-        <CardHeader heading="Skills" />
-      </section>
-    </Flex>
+        <View>
+          <CardHeader heading="Hobbies" logo={<ReplayIcon size="S" />} />
+          <HobbyCard hobbies={data.hobbies}/>
+        </View>
+
+        <View>
+          <CardHeader heading="Online Profiles" logo={<GlobeIcon size="S" />} />
+          <HobbyCard hobbies={data.hobbies}/>
+        </View>
+
+        <View>
+          <CardHeader
+            heading="Recognitions"
+            logo={<AnnotatePenIcon size="S" />}
+          />
+          <AwardCard awards={data.awards}/>
+        </View>
+      </View>
+    </Grid>
   );
 };
 

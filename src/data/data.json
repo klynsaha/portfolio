@@ -1,99 +1,123 @@
 {
-    "profile": {
-        "name": "Kalyan Saha",
-        "headline": "Software Developer",
-        "image_url": "link here"
+  "profile": {
+    "name": "Kalyan Saha",
+    "headline": "Software Developer",
+    "image_url": "link here"
+  },
+  "work": [
+    {
+      "organization": "Adobe Systems",
+      "location": "Noida",
+      "role": "Member of Technical Staff - 2",
+      "start": "May, 2021",
+      "end": "",
+      "descriptions": [
+        "Working in Document Cloud Team - AcrobatJS",
+        "Working on Web based client side PDF viewer"
+      ]
     },
-    "work": [
-        {
-            "organization": "Adobe Systems",
-            "logo": "adobe_logo.svg",
-            "location": "Noida",
-            "role": "Member of Technical Staff - 2",
-            "start": "May, 2021",
-            "end": "",
-            "descriptions": [
-                "Working in Document Cloud Team - AcrobatJS",
-                "Working on Web based client side PDF viewer"
-            ]
-        },
-        {
-            "organization": "Samsung Electronics",
-            "logo": "samsung_logo.svg",
-            "location": "Noida",
-            "role": "Software Engineer",
-            "start": "June, 2019",
-            "end": "April, 2021",
-            "descriptions": [
-                "Worked in Mobile Bluetooth Communication/Convergence Team",
-                "Provided Python based automation solutions which reduced redundant work by ~95%",
-                "Successful bringup of 150+ Samsung models, with track record of solving critical issues with TAT < 1.6"
-            ]
-        },
-        {
-            "organization": "Indian Institute of Technology",
-            "logo": "",
-            "location": "Dhanbad",
-            "role": "Web Development Intern",
-            "start": "May, 2018",
-            "end": "July, 2018",
-            "descriptions": [
-                "Developed a module ‘Research Project Management’ for the Institute’s Management Information System.",
-                "ech Stack: PHP - CodeIgniter, jQuery, Ajax, MySQL."
-            ]
-        }
-    ],
-    "education": [
-        {
-            "organization": "Indian Institute of Technology",
-            "location": "Dhanbad",
-            "course": "Bachelor of Technology",
-            "start": "July, 2015",
-            "end": "May, 2019",
-            "descriptions": [
-                "Computer Science and Engineering (with Honours) - CGPA 7.52"
-            ]
-        },
-        {
-            "organization": "JNV Kottayam",
-            "location": "Kerala",
-            "course": "Higer Secondary (CBSE)",
-            "start": "July, 2013",
-            "end": "April, 2015",
-            "descriptions": [
-                "PCM, Computer Science - 94.40%"
-            ]
-        },
-        {
-            "organization": "JNV South 24 Parganas",
-            "location": "WB",
-            "course": "Secondary (CBSE)",
-            "start": "July, 2008",
-            "end": "April, 2013",
-            "descriptions": [
-                "Science - CGPA 10"
-            ]
-        }
-    ],
-    "projects": [
-        {
-            "name": "Project 1",
-            "link": "BTech in CSE",
-            "start": "July, 2015",
-            "end": "May, 2019",
-            "description": "some description"
-        },
-        {
-            "name": "Project 1",
-            "link": "BTech in CSE",
-            "start": "July, 2015",
-            "end": "May, 2019",
-            "description": "some description"
-        }
-    ],
-    "skills": {
-        "laguages": ["JavaScript", "C++", "Python"],
-        "frameworks/Liraries": ["ReactJS", "Django"]
+    {
+      "organization": "Samsung Electronics",
+      "location": "Noida",
+      "role": "Software Engineer",
+      "start": "June, 2019",
+      "end": "April, 2021",
+      "descriptions": [
+        "Worked in Mobile Bluetooth Communication/Convergence Team",
+        "Provided Python based automation solutions which reduced redundant work by ~95%",
+        "Successful bringup of 150+ Samsung models, with track record of solving critical issues with TAT < 1.6"
+      ]
     },
-    "Hobbies": ["Coding", "Football"]
+    {
+      "organization": "Indian Institute of Technology",
+      "logo": "",
+      "location": "Dhanbad",
+      "role": "Web Development Intern",
+      "start": "May, 2018",
+      "end": "July, 2018",
+      "descriptions": [
+        "Developed a module ‘Research Project Management’ for the Institute’s Management Information System.",
+        "ech Stack: PHP - CodeIgniter, jQuery, Ajax, MySQL."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "organization": "Indian Institute of Technology",
+      "location": "Dhanbad",
+      "course": "Bachelor of Technology",
+      "start": "July, 2015",
+      "end": "May, 2019",
+      "descriptions": [
+        "Computer Science and Engineering (with Honors) - CGPA 7.52"
+      ]
+    },
+    {
+      "organization": "JNV Kottayam",
+      "location": "Kerala",
+      "course": "Higer Secondary (CBSE)",
+      "start": "July, 2013",
+      "end": "April, 2015",
+      "descriptions": ["PCM, Computer Science - 94.40%"]
+    },
+    {
+      "organization": "JNV South 24 Parganas",
+      "location": "WB",
+      "course": "Secondary (CBSE)",
+      "start": "July, 2008",
+      "end": "April, 2013",
+      "descriptions": ["Science - CGPA 10"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project 1",
+      "link": "BTech in CSE",
+      "start": "July, 2015",
+      "end": "May, 2019",
+      "description": "some description"
+    },
+    {
+      "name": "Project 1",
+      "link": "BTech in CSE",
+      "start": "July, 2015",
+      "end": "May, 2019",
+      "description": "some description"
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "C++",
+    "Python",
+    "SQL",
+    "HTML",
+    "CSS",
+    "PHP",
+    "Django",
+    "CodeIgniter",
+    "Bootstrap",
+    "jQuery",
+    "MongoDB",
+    "ML",
+    "Git & Github",
+    "DS and Algo"
+  ],
+  "hobbies": ["Coding", "Football"],
+  "awards": [
+    {
+        "name": "Employee of the Quarter",
+        "organization": "Samsung",
+        "time": "Q1-2020"
+    },
+    {
+        "name": "Certificate of Achievement",
+        "organization": "CodersBit",
+        "time": "2018"
+    },
+    {
+        "name": "Certificate of Appreciation - JDST",
+        "organization": "Dakshana",
+        "time": "2016"
+    }
+  ]
 }
