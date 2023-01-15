@@ -7,6 +7,7 @@
     "work": [
         {
             "organization": "Adobe Systems",
+            "logo": "adobe_logo.svg",
             "location": "Noida",
             "role": "Member of Technical Staff - 2",
             "start": "May, 2021",
@@ -18,6 +19,7 @@
         },
         {
             "organization": "Samsung Electronics",
+            "logo": "samsung_logo.svg",
             "location": "Noida",
             "role": "Software Engineer",
             "start": "June, 2019",
@@ -30,6 +32,7 @@
         },
         {
             "organization": "Indian Institute of Technology",
+            "logo": "",
             "location": "Dhanbad",
             "role": "Web Development Intern",
             "start": "May, 2018",

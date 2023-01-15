@@ -3,21 +3,21 @@ import {
   Flex,
   Divider,
   Heading,
-  Breadcrumbs,
-  Item,
 } from "@adobe/react-spectrum";
 import data from "../../data/data.json";
 import WorkCard from "./WorkCard";
 import EducationCard from "./EducationCard";
+import Briefcase from "@spectrum-icons/workflow/Briefcase";
+import Education from "@spectrum-icons/workflow/Education";
 
-const CardHeader = ({ heading }) => {
+const CardHeader = ({ heading, logo }) => {
   return (
-    <>
-      <Heading level={2} marginBottom="0" UNSAFE_style={{ color: "lightblue" }}>
-        {heading}
+    <div>
+      <Heading level={2} marginBottom="0" marginX="10px">
+        {logo} {heading}
       </Heading>
       <Divider size="S" />
-    </>
+    </div>
   );
 };
 
@@ -29,16 +29,19 @@ const Body = () => {
       gap="size-100"
     >
       <section id="experience">
-        <CardHeader heading="Experience" />
-        {data.work.map((work) => (
-          <WorkCard work={work} />
+        <CardHeader
+          heading="Experience"
+          logo={<Briefcase size="M" UNSAFE_style={{ display: "inline" }} />}
+        />
+        {data.work.map((work, index) => (
+          <WorkCard key={index} work={work} />
         ))}
       </section>
 
       <section id="education">
-        <CardHeader heading="Education" />
-        {data.education.map((education) => (
-          <EducationCard education={education} />
+        <CardHeader heading="Education" logo={<Education size="M" />} />
+        {data.education.map((education, index) => (
+          <EducationCard key={index} education={education} />
         ))}
       </section>
 

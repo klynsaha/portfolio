@@ -1,11 +1,8 @@
 import HeaderCss from "./Header.css";
 import {
-  Header,
   Heading,
   Flex,
-  Link,
   ToggleButton,
-  Content
 } from "@adobe/react-spectrum";
 import data from "../../data/data.json";
 import Moon from "@spectrum-icons/workflow/Moon";

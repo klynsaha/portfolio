@@ -36,8 +36,8 @@ const EducationCard = ({ education }) => {
       </Text>
 
       <Content marginX="1rem" marginY=".5rem">
-        {education.descriptions.map((desp) => (
-          <li>{desp}</li>
+        {education.descriptions.map((desp, index) => (
+          <li key={index}>{desp}</li>
         ))}
       </Content>
     </Content>
