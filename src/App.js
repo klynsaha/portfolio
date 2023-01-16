@@ -16,9 +16,9 @@ function App() {
 
   return (
     <Provider theme={defaultTheme} colorScheme={colorScheme}>
-      <Grid rows={["5rem", "2px", "3fr", "3rem"]}>
+      <Grid rows={["5rem", "3fr", "3rem"]}>
         <Header themeSetter={themeSetter} colorScheme={colorScheme} position="sticky" /> 
-        <Divider size="S" />
+        {/* <Divider size="S" /> */}
         <Body />
         <Footer />
       </Grid>

@@ -13,7 +13,8 @@
       "end": "",
       "descriptions": [
         "Working in Document Cloud Team - AcrobatJS",
-        "Working on Web based client side PDF viewer"
+        "Working on Web based client side PDF viewer",
+        "Tech Stack: JavaScript, C++, ReactJS, WebAssembly"
       ]
     },
     {
@@ -37,7 +38,7 @@
       "end": "July, 2018",
       "descriptions": [
         "Developed a module ‘Research Project Management’ for the Institute’s Management Information System.",
-        "ech Stack: PHP - CodeIgniter, jQuery, Ajax, MySQL."
+        "Tech Stack: PHP - CodeIgniter, jQuery, Ajax, MySQL."
       ]
     }
   ],
@@ -71,18 +72,20 @@
   ],
   "projects": [
     {
-      "name": "Project 1",
+      "name": "Delta and Sanity Automation Tool - Samsung",
       "link": "BTech in CSE",
+      "linkName": "Github",
       "start": "July, 2015",
       "end": "May, 2019",
-      "description": "some description"
+      "description": "This tool uses VCS Perforce Python API and adb to automate new model bring up/ OS Upgrade and sanity processes. The Bring-up process usually takes 2-3 hrs and with the help of this tool is reduced to ~3 min. This project is recognised at HOD level."
     },
     {
-      "name": "Project 1",
+      "name": "URL Shortener",
       "link": "BTech in CSE",
+      "linkName": "Github",
       "start": "July, 2015",
       "end": "May, 2019",
-      "description": "some description"
+      "description": "This app is made using Django in Python. Users can provide a long url and the web app will give a small url. URLs will be saved in the database."
     }
   ],
   "skills": [

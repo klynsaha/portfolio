@@ -1,5 +1,5 @@
 import BodyCss from "./Body.css";
-import { Grid, Divider, Heading, View } from "@adobe/react-spectrum";
+import { Grid, Divider, Heading, View, Well } from "@adobe/react-spectrum";
 import data from "../../data/data.json";
 import WorkCard from "./Work";
 import EducationCard from "./Education";
@@ -7,6 +7,7 @@ import SkillCard from "./Skill";
 import HobbyCard from "./Hobby";
 import AwardCard from "./Award";
 import OnlineProfiles from "./OnlineProfiles";
+import Project from "./Project";
 import BriefcaseIcon from "@spectrum-icons/workflow/Briefcase";
 import EducationIcon from "@spectrum-icons/workflow/Education";
 import ActionIcon from "@spectrum-icons/workflow/Actions";
@@ -14,7 +15,6 @@ import AnnotatePenIcon from "@spectrum-icons/workflow/AnnotatePen";
 import ReplayIcon from "@spectrum-icons/workflow/Replay";
 import GlobeIcon from "@spectrum-icons/workflow/Globe";
 import RealTimeCustomerProfileIcon from "@spectrum-icons/workflow/RealTimeCustomerProfile";
-
 
 const CardHeader = ({ heading, logo }) => {
   return (
@@ -34,7 +34,8 @@ const Body = () => {
       gap="size-300"
       columns={{
         S: ["1fr"],
-        L: ["3fr", "1fr"],
+        M: ["3fr", "2px", "1fr"],
+        L: ["2.5fr", "2px", "1fr"],
       }}
     >
       <View>
@@ -54,22 +55,26 @@ const Body = () => {
 
         <View>
           <CardHeader heading="Projects" logo={<ActionIcon size="S" />} />
+          <Project projects={data.projects}/>
         </View>
       </View>
+
+      <Divider size="S" orientation="vertical" />
+
       <View>
         <View>
           <CardHeader heading="Skills" logo={<AnnotatePenIcon size="S" />} />
-            <SkillCard skills={data.skills} />
+          <SkillCard skills={data.skills} />
         </View>
 
         <View>
           <CardHeader heading="Hobbies" logo={<ReplayIcon size="S" />} />
-          <HobbyCard hobbies={data.hobbies}/>
+          <HobbyCard hobbies={data.hobbies} />
         </View>
 
         <View>
           <CardHeader heading="Online Profiles" logo={<GlobeIcon size="S" />} />
-          <OnlineProfiles profiles={data.profiles}/>
+          <OnlineProfiles profiles={data.profiles} />
         </View>
 
         <View>
@@ -77,7 +82,7 @@ const Body = () => {
             heading="Recognitions"
             logo={<AnnotatePenIcon size="S" />}
           />
-          <AwardCard awards={data.awards}/>
+          <AwardCard awards={data.awards} />
         </View>
       </View>
     </Grid>
