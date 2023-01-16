@@ -1,5 +1,5 @@
 import { Content } from "@react-spectrum/view";
-import { Well, Link, Heading, Flex } from "@adobe/react-spectrum";
+import { Well, Link, Heading } from "@adobe/react-spectrum";
 
 const Project = ({ projects }) => {
   return (

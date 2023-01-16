@@ -1,5 +1,11 @@
 import BodyCss from "./Body.css";
-import { Grid, Divider, Heading, View, Well } from "@adobe/react-spectrum";
+import { Grid, Divider, Heading, View } from "@adobe/react-spectrum";
+import BriefcaseIcon from "@spectrum-icons/workflow/Briefcase";
+import EducationIcon from "@spectrum-icons/workflow/Education";
+import ActionIcon from "@spectrum-icons/workflow/Actions";
+import AnnotatePenIcon from "@spectrum-icons/workflow/AnnotatePen";
+import ReplayIcon from "@spectrum-icons/workflow/Replay";
+import GlobeIcon from "@spectrum-icons/workflow/Globe";
 import data from "../../data/data.json";
 import WorkCard from "./Work";
 import EducationCard from "./Education";
@@ -8,19 +14,12 @@ import HobbyCard from "./Hobby";
 import AwardCard from "./Award";
 import OnlineProfiles from "./OnlineProfiles";
 import Project from "./Project";
-import BriefcaseIcon from "@spectrum-icons/workflow/Briefcase";
-import EducationIcon from "@spectrum-icons/workflow/Education";
-import ActionIcon from "@spectrum-icons/workflow/Actions";
-import AnnotatePenIcon from "@spectrum-icons/workflow/AnnotatePen";
-import ReplayIcon from "@spectrum-icons/workflow/Replay";
-import GlobeIcon from "@spectrum-icons/workflow/Globe";
-import RealTimeCustomerProfileIcon from "@spectrum-icons/workflow/RealTimeCustomerProfile";
 
 const CardHeader = ({ heading, logo }) => {
   return (
     <div>
       <Heading level={2} marginBottom="0" marginX="10px">
-        {logo} {heading}
+        {logo} <div style={{ color: "#73C2FB", fontWeight: "normal", display: "inline", textTransform: "uppercase" }}>{heading}</div>
       </Heading>
       <Divider size="S" />
     </div>
@@ -61,7 +60,7 @@ const Body = () => {
 
       <Divider size="S" orientation="vertical" />
 
-      <View>
+      <View  UNSAFE_style={{ display: "flex", rowGap: "15px", flexDirection: "column"}}>
         <View>
           <CardHeader heading="Skills" logo={<AnnotatePenIcon size="S" />} />
           <SkillCard skills={data.skills} />
