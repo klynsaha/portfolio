@@ -119,5 +119,15 @@
         "organization": "Dakshana",
         "time": "2016"
     }
+  ],
+  "profiles": [
+    {
+      "name": "Github",
+      "link": "https://www.github.com/klynsaha"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/klynsaha"
+    }
   ]
 }

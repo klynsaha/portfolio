@@ -6,6 +6,7 @@ import EducationCard from "./Education";
 import SkillCard from "./Skill";
 import HobbyCard from "./Hobby";
 import AwardCard from "./Award";
+import OnlineProfiles from "./OnlineProfiles";
 import BriefcaseIcon from "@spectrum-icons/workflow/Briefcase";
 import EducationIcon from "@spectrum-icons/workflow/Education";
 import ActionIcon from "@spectrum-icons/workflow/Actions";
@@ -68,7 +69,7 @@ const Body = () => {
 
         <View>
           <CardHeader heading="Online Profiles" logo={<GlobeIcon size="S" />} />
-          <HobbyCard hobbies={data.hobbies}/>
+          <OnlineProfiles profiles={data.profiles}/>
         </View>
 
         <View>
